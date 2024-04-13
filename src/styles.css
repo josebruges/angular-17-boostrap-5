@@ -1,0 +1,27 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+.owl-nav.ng-star-inserted {
+    position: absolute !important;
+    top: 2.8rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+.owl-prev {
+    color: #18191E !important;
+    border-radius: 25px 25px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+.owl-next {
+    color: #18191E !important;
+    border-radius: 25px 25px !important;
+    height: 30px !important;
+    width: 30px !important;
+}
+.category-title {
+    letter-spacing: 0px;
+    color: #18191E;
+}

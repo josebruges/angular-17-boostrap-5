@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<section class="section-content-category">
+    <div class="container row grid-filter">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ptop">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Busca un artículo" value="">
+                <label for="floatingInput">Busca un artículo o autor</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ptop">
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" >
+                    <option selected>Elige una categoría</option>
+                    <option value="1">Category 1</option>
+                    <option value="2">Category 2</option>
+                    <option value="3">Category 3</option>
+                </select>
+                <label for="floatingSelect">Categorías</label>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 ptop">
+            <button type="button" class="btn btn-danger">Buscar</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-content-category">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="category-content-title">
+                <h3 class="font-weight-bold category-title">Category 1</h3>
+                <p><a class="link-opacity-100" href="#">VER TODOS</a></p>
+            </div>
+            <owl-carousel-o [options]="customOptions" *ngIf="articles">
+                <ng-template carouselSlide *ngFor="let item of articles">
+                    <app-card [article]="item"></app-card>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>
