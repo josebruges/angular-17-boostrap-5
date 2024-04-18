@@ -31,11 +31,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  isCleanInput(title: string) {
-    console.log('title: ', title)
+  onInputChange(title: string) {
     if (title.trim() === '') {
-      // Si el campo de búsqueda está vacío, cargar todos los posts
-      this.posts = [...this.postsStatic];
+      this.loadPosts();
     }
   }
 }
