@@ -4,8 +4,8 @@
       <div class="container row grid-filter">
           <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ptop">
               <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="Busca un artículo" [(ngModel)]="searchTitle" (change)="isCleanInput(searchTitle)">
-                  <label for="floatingInput">Busca un artículo o autor</label>
+                  <input type="email" class="form-control" id="floatingInput" placeholder="Busca un artículo" [(ngModel)]="searchTitle" (input)="onInputChange(searchTitle)">
+                  <label for="floatingInput">Buscar post...</label>
               </div>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-2 col-xxl-2 ptop">
