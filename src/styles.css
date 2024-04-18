@@ -2,6 +2,10 @@
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
+body {
+    background-color: #F1F5F9;
+}
+
 .owl-nav.ng-star-inserted {
     position: absolute !important;
     top: 2.8rem !important;
