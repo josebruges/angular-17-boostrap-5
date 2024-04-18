@@ -1,6 +1,6 @@
 // environment.ts
 export const environment = {
     production: false,
-    API_ROOT: 'https://jsonapi.org'
+    API_ROOT: 'https://jsonplaceholder.typicode.com'
   };
   

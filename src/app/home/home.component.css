@@ -1,3 +1,6 @@
+.content-sections {
+    min-width: 600px;
+}
 .ptop {
     padding-top: 25px;
 }
@@ -34,4 +37,8 @@
 
 .section-content-category {
     margin-top: 20px;
+}
+.mv-20 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

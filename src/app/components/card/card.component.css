@@ -3,3 +3,34 @@
     width: 256px;
     height: 144px;
 }
+.card {
+    width: 253px;
+    margin: auto;
+    padding: 14px 0px;
+    .card-content-img {
+        text-align: center;
+    }
+    .card-img-post {
+        width: 251px;
+        height: 150px;
+        min-width: 251px;
+        min-height: 150px;
+        max-width: 251px;
+        max-height: 150px;
+        padding: 0px 10px;
+    }
+    .card-title {
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #18191E;
+        opacity: 1;
+    }
+    .card-text {
+        font-size: 12px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #18191E;
+        opacity: 1;
+    }
+}

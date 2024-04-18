@@ -1,1 +1,20 @@
-<img class="img-carousel" *ngIf="article" [src]="article.img" alt="efiempresa" width="256" height="144">
+<div class="card" *ngIf="post">
+    <div class="card-content-img">
+        <img class="card-img-top card-img-post" *ngIf="photos.length > 0" [src]="photos[0]?.thumbnailUrl" alt="efiempresa" width="150" height="150">
+        <ngx-skeleton-loader
+            *ngIf="photos.length === 0"
+            count="1"
+            [theme]="{ 
+                'border-radius': '5px',
+                width: '150px',
+                height: '150px',
+                'background-color': '#f6f7fa',
+                border: '1px solid white'
+            }"
+        />
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{post?.title}}</h5>
+      <p class="card-text">{{post?.body}}</p>
+    </div>
+</div>

@@ -1,8 +1,9 @@
 nav {
+    height: 62px;
     background-color: #8F0B1C;
 }
 .navbar-sub {
-    height: 20px;
+    height: 45px;
     background-color: #B4061E;
 }
 .brand-navbar {
